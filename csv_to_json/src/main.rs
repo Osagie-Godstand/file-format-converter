@@ -4,7 +4,7 @@ mod json_writer;
 use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let csv_file_path = "/Users/dgodstand/Downloads/record2.csv.numbers";
+    let csv_file_path = "/Users/dgodstand/Downloads/record.csv.numbers";
     let json_file_path = "/Users/dgodstand/Downloads/record.json";
 
     let records = csv_reader::read_csv_file(csv_file_path)?;
